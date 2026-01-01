@@ -1,1 +1,72 @@
-Test
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="gonenli">
+        <meta name="author" content="Burak GONENLI (info at gonenli.com)">
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <title>gönenli</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//assets.gonenli.com/v7/_gonenli_/css/vidage.css">
+
+        <style>
+            .vidage::before {
+                background-image: url('assets/video/Hello-World.jpg');
+            }
+            .vidage::after {
+                background-color: #692F3E;
+                background-image: url('assets/img/pattern.svg');
+                opacity: .3;
+            }
+        </style>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-PRPXX69"></script>
+        <!--suppress JSValidateTypes -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-943052-1');
+        </script>
+
+    </head>
+    <body>
+
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRPXX69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+        <div class="vidage">
+            <video id="vidage" class="vidage-video" preload="metadata" loop autoplay muted>
+                <source src="assets/video/Hello-World.webm" type="video/webm">
+                <source src="assets/video/Hello-World.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vidage@1.0.0/dist/vidage.min.js"></script>
+
+        <script>
+            new Vidage('#vidage');
+        </script>
+
+        <!--suppress JSCheckFunctionSignatures -->
+        <script>
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();k=e.createElement(t);a=e.getElementsByTagName(t)[0];k["async"]=1;k.src=r;a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+            ym('20173150', "init", {clickmap: true, webvisor: true})
+        </script>
+
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/20173150?ut=noindex" alt="" hidden>
+            </div>
+        </noscript>
+
+    </body>
+</html>
